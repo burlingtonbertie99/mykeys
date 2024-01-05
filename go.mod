@@ -1,4 +1,4 @@
-module github.com/keys-pub/keys
+module github.com/burlingtonbertie99/mykeys
 
 go 1.13
 
