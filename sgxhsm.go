@@ -10,7 +10,8 @@ import (
 
 // EdX25519 key type.
 const SGXHSM KeyType = "sgxhsm"
-const sgxhsmKeyHRP string = "sgx"
+
+//const sgxhsmKeyHRP string = "sgx"
 
 // SignOverhead alias for (nacl) sign.Overhead.
 //const SignOverhead = sign.Overhead
