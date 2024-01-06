@@ -4,8 +4,6 @@ import (
 	"crypto"
 	"crypto/ed25519"
 	"crypto/subtle"
-
-	"github.com/pkg/errors"
 )
 
 // EdX25519 key type.
@@ -144,6 +142,7 @@ func NewSGXHSMPublicKey(b *[ed25519.PublicKeySize]byte) *SGXHSMPublicKey {
 	}
 }
 
+/*
 // NewSGXHSMPublicKeyFromID creates a EdX25519PublicKey from an ID.
 func NewSGXHSMPublicKeyFromID(id ID) (*SGXHSMPublicKey, error) {
 	if id == "" {
@@ -165,6 +164,9 @@ func NewSGXHSMPublicKeyFromID(id ID) (*SGXHSMPublicKey, error) {
 	}, nil
 }
 
+*/
+
+/*
 // SGXHSMMatch returns true if key IDs are equal or if either key matches their
 // X25519 counterpart.
 func SGXHSMMatch(expected ID, kid ID) bool {
@@ -190,6 +192,8 @@ func SGXHSMMatch(expected ID, kid ID) bool {
 	}
 	return false
 }
+
+*/
 
 // ID for EdX25519Key.
 func (k *SGXHSMPublicKey) ID() ID {
