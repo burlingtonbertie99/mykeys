@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"testing"
 
+	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys-ext/api"
+	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/api"
-	"github.com/keys-pub/keys/tsutil"
 	"github.com/stretchr/testify/require"
 	"github.com/vmihailenco/msgpack/v4"
 )

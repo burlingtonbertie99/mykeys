@@ -3,8 +3,8 @@ package saltpack
 import (
 	"golang.org/x/crypto/ed25519"
 
+	"github.com/burlingtonbertie99/mykeys-ext"
 	ksaltpack "github.com/keybase/saltpack"
-	"github.com/keys-pub/keys"
 	"golang.org/x/crypto/nacl/sign"
 )
 

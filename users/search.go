@@ -4,9 +4,9 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/dstore"
-	"github.com/keys-pub/keys/user"
+	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys-ext/dstore"
+	"github.com/burlingtonbertie99/mykeys-ext/user"
 )
 
 // SearchRequest ...

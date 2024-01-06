@@ -3,7 +3,7 @@ package saltpack_test
 import (
 	"testing"
 
-	"github.com/keys-pub/keys/saltpack"
+	"github.com/burlingtonbertie99/mykeys-ext/saltpack"
 	"github.com/stretchr/testify/require"
 )
 

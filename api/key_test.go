@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/api"
+	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys-ext/api"
 	"github.com/stretchr/testify/require"
 )
 

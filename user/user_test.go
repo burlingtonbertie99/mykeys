@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/tsutil"
-	"github.com/keys-pub/keys/user"
+	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
+	"github.com/burlingtonbertie99/mykeys-ext/user"
 	"github.com/stretchr/testify/require"
 )
 

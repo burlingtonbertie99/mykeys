@@ -2,8 +2,8 @@
 package noise
 
 import (
+	"github.com/burlingtonbertie99/mykeys-ext"
 	"github.com/flynn/noise"
-	"github.com/keys-pub/keys"
 	"github.com/pkg/errors"
 )
 
@@ -44,7 +44,6 @@ type Handshake struct {
 // - (4) Responder: Write
 //
 // When the handshake is complete, use the Cipher to Encrypt/Decrypt.
-//
 func NewHandshake(sender *keys.X25519Key, recipient *keys.X25519PublicKey, initiator bool) (*Handshake, error) {
 	dhKey := noise.DHKey{
 		Private: sender.PrivateKey()[:],

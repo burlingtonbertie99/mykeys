@@ -3,7 +3,7 @@ package saltpack
 import (
 	"io"
 
-	"github.com/keys-pub/keys"
+	"github.com/burlingtonbertie99/mykeys-ext"
 	"github.com/pkg/errors"
 
 	ksaltpack "github.com/keybase/saltpack"

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/keys-pub/keys/encoding"
-	"github.com/keys-pub/keys/json"
-	"github.com/keys-pub/keys/tsutil"
+	"github.com/burlingtonbertie99/mykeys-ext/encoding"
+	"github.com/burlingtonbertie99/mykeys-ext/json"
+	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
 	"github.com/pkg/errors"
 )
 

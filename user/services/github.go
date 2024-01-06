@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/keys-pub/keys/http"
-	"github.com/keys-pub/keys/user"
-	"github.com/keys-pub/keys/user/validate"
+	"github.com/burlingtonbertie99/mykeys-ext/http"
+	"github.com/burlingtonbertie99/mykeys-ext/user"
+	"github.com/burlingtonbertie99/mykeys-ext/user/validate"
 
 	"github.com/pkg/errors"
 )

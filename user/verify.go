@@ -3,7 +3,7 @@ package user
 import (
 	"fmt"
 
-	"github.com/keys-pub/keys/encoding"
+	"github.com/burlingtonbertie99/mykeys-ext/encoding"
 	"github.com/pkg/errors"
 )
 

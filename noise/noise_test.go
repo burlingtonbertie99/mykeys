@@ -3,8 +3,8 @@ package noise_test
 import (
 	"testing"
 
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/noise"
+	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys-ext/noise"
 	"github.com/stretchr/testify/require"
 )
 

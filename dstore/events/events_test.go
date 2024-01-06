@@ -6,9 +6,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/keys-pub/keys/dstore"
-	"github.com/keys-pub/keys/dstore/events"
-	"github.com/keys-pub/keys/tsutil"
+	"github.com/burlingtonbertie99/mykeys-ext/dstore"
+	"github.com/burlingtonbertie99/mykeys-ext/dstore/events"
+	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
 	"github.com/stretchr/testify/require"
 )
 

@@ -6,13 +6,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/dstore"
-	"github.com/keys-pub/keys/tsutil"
-	"github.com/keys-pub/keys/user"
-	"github.com/keys-pub/keys/user/services"
-	"github.com/keys-pub/keys/user/validate"
-	"github.com/keys-pub/keys/users"
+	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys-ext/dstore"
+	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
+	"github.com/burlingtonbertie99/mykeys-ext/user"
+	"github.com/burlingtonbertie99/mykeys-ext/user/services"
+	"github.com/burlingtonbertie99/mykeys-ext/user/validate"
+	"github.com/burlingtonbertie99/mykeys-ext/users"
 	"github.com/stretchr/testify/require"
 )
 

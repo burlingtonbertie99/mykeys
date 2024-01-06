@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/keys-pub/keys/user/validate"
+	"github.com/burlingtonbertie99/mykeys-ext/user/validate"
 	"github.com/stretchr/testify/require"
 )
 

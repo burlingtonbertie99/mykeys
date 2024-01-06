@@ -5,7 +5,7 @@ import (
 	"crypto/ed25519"
 	"crypto/subtle"
 
-	"github.com/keys-pub/keys/encoding"
+	"github.com/burlingtonbertie99/mykeys-ext/encoding"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/nacl/sign"
 )

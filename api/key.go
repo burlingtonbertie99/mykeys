@@ -8,7 +8,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/keys-pub/keys"
+	"github.com/burlingtonbertie99/mykeys-ext"
 	"github.com/pkg/errors"
 	"github.com/vmihailenco/msgpack/v4"
 )

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/keys-pub/keys/dstore"
+	"github.com/burlingtonbertie99/mykeys-ext/dstore"
 )
 
 func ExampleDocuments_DocumentIterator() {

@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/burlingtonbertie99/mykeys-ext/dstore"
+	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/keys-pub/keys/dstore"
-	"github.com/keys-pub/keys/tsutil"
 	"github.com/stretchr/testify/require"
 )
 

@@ -5,8 +5,8 @@ import (
 	"bytes"
 	"crypto/subtle"
 
+	"github.com/burlingtonbertie99/mykeys-ext"
 	ksaltpack "github.com/keybase/saltpack"
-	"github.com/keys-pub/keys"
 	"github.com/pkg/errors"
 )
 

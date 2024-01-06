@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/saltpack"
+	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys-ext/saltpack"
 )
 
 func ExampleEncrypt() {

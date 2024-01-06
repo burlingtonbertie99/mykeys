@@ -3,7 +3,7 @@ package keyring_test
 import (
 	"testing"
 
-	"github.com/keys-pub/keys/keyring"
+	"github.com/burlingtonbertie99/mykeys-ext/keyring"
 )
 
 func TestMemKeyring(t *testing.T) {

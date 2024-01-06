@@ -4,14 +4,14 @@ import (
 	"context"
 	"crypto/sha256"
 	"fmt"
+	keys "github.com/burlingtonbertie99/mykeys"
 	"net/url"
 	"strconv"
 	"strings"
 	"time"
 
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/encoding"
-	"github.com/keys-pub/keys/tsutil"
+	"github.com/burlingtonbertie99/mykeys/encoding"
+	"github.com/burlingtonbertie99/mykeys/tsutil"
 	"github.com/pkg/errors"
 )
 

@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/keys-pub/keys/encoding"
+	"github.com/burlingtonbertie99/mykeys-ext/encoding"
 )
 
 // RandBytes returns random bytes of length.

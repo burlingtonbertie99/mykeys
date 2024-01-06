@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/keys-pub/keys/http"
-	"github.com/keys-pub/keys/tsutil"
-	"github.com/keys-pub/keys/user"
+	"github.com/burlingtonbertie99/mykeys-ext/http"
+	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
+	"github.com/burlingtonbertie99/mykeys-ext/user"
 	"github.com/pkg/errors"
 )
 

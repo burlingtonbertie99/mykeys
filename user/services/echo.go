@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/keys-pub/keys/http"
-	"github.com/keys-pub/keys/user"
+	"github.com/burlingtonbertie99/mykeys-ext/http"
+	"github.com/burlingtonbertie99/mykeys-ext/user"
 	"github.com/pkg/errors"
 )
 

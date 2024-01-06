@@ -5,12 +5,12 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/dstore"
-	"github.com/keys-pub/keys/http"
-	"github.com/keys-pub/keys/tsutil"
-	"github.com/keys-pub/keys/user"
-	"github.com/keys-pub/keys/users"
+	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys-ext/dstore"
+	"github.com/burlingtonbertie99/mykeys-ext/http"
+	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
+	"github.com/burlingtonbertie99/mykeys-ext/user"
+	"github.com/burlingtonbertie99/mykeys-ext/users"
 	"github.com/stretchr/testify/require"
 )
 

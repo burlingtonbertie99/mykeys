@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/noise"
+	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys-ext/noise"
 )
 
 func ExampleNewHandshake() {

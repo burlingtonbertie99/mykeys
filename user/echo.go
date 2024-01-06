@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/keys-pub/keys"
+	"github.com/burlingtonbertie99/mykeys-ext"
 )
 
 // NewEcho creates a signed user@echo (for testing).

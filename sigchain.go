@@ -6,7 +6,7 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/keys-pub/keys/dstore"
+	"github.com/burlingtonbertie99/mykeys-ext/dstore"
 	"github.com/pkg/errors"
 )
 

@@ -3,10 +3,10 @@ package api_test
 import (
 	"testing"
 
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/api"
-	"github.com/keys-pub/keys/encoding"
-	"github.com/keys-pub/keys/tsutil"
+	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys-ext/api"
+	"github.com/burlingtonbertie99/mykeys-ext/encoding"
+	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
 	"github.com/stretchr/testify/require"
 	"github.com/vmihailenco/msgpack/v4"
 )

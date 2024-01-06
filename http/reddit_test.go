@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/keys-pub/keys/http"
+	"github.com/burlingtonbertie99/mykeys-ext/http"
 	"github.com/stretchr/testify/require"
 )
 

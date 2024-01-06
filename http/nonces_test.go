@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/keys-pub/keys"
-	"github.com/keys-pub/keys/encoding"
-	"github.com/keys-pub/keys/http"
-	"github.com/keys-pub/keys/tsutil"
+	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys-ext/encoding"
+	"github.com/burlingtonbertie99/mykeys-ext/http"
+	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
 	"github.com/stretchr/testify/require"
 )
 

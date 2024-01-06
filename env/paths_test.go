@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/keys-pub/keys"
+	"github.com/burlingtonbertie99/mykeys-ext"
 
-	"github.com/keys-pub/keys/env"
+	"github.com/burlingtonbertie99/mykeys-ext/env"
 	"github.com/stretchr/testify/require"
 )
 
