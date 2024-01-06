@@ -344,39 +344,39 @@ func GenerateSGXHSMKey() string {
 	//seed := Rand32()
 	//key := NewEdX25519KeyFromSeed(seed)
 	//return key
+	/*
+	   	// HTTP endpoint
+	   //	posturl := "https://192.168.0.21:9002/"
 
-	// HTTP endpoint
-	posturl := "https://192.168.0.21:9002/ehsm?Action=ListKey"
+	   	// JSON body
+	   	body := []byte(`{
+	   		"keyspec": "EH_AES_GCM_128",
+	   		"origin": "EH_INTERNAL_KEY",
+	   		"keyusage": "EH_KEYUSAGE_ENCRYPT_DECRYPT"
+	   	}`)
 
-	// JSON body
-	body := []byte(`{
-		"keyspec": "EH_AES_GCM_128",
-		"origin": "EH_INTERNAL_KEY",
-		"keyusage": "EH_KEYUSAGE_ENCRYPT_DECRYPT"
-	}`)
+	   	// Create a HTTP post request
+	   	r, err := http.NewRequest("POST", posturl, bytes.NewBuffer(body))
+	   	if err != nil {
+	   		panic(err)
+	   	}
 
-	// Create a HTTP post request
-	r, err := http.NewRequest("POST", posturl, bytes.NewBuffer(body))
-	if err != nil {
-		panic(err)
-	}
+	   	r.Header.Add("Content-Type", "application/json")
 
-	r.Header.Add("Content-Type", "application/json")
+	   	client := &http.Client{}
+	   	res, err := client.Do(r)
+	   	if err != nil {
+	   		panic(err)
+	   	}
 
-	client := &http.Client{}
-	res, err := client.Do(r)
-	if err != nil {
-		panic(err)
-	}
+	   	defer res.Body.Close()
 
-	defer res.Body.Close()
-
-	post := &Post{}
-	derr := json.NewDecoder(res.Body).Decode(post)
-	if derr != nil {
-		panic(derr)
-	}
-
+	   	post := &Post{}
+	   	derr := json.NewDecoder(res.Body).Decode(post)
+	   	if derr != nil {
+	   		panic(derr)
+	   	}
+	*/
 	//	fmt.Println("Id:", post.Id)
 	//	fmt.Println("Title:", post.Title)/
 	//	fmt.Println("Body:", post.Body)
@@ -386,11 +386,17 @@ func GenerateSGXHSMKey() string {
 
 	myclient.appid = "eb77f9c4-3ae6-44e0-b9ef-4a4fd20e6582"
 	myclient.apikey = "wWH4wPRTJvvAdviN069gB9dKhbLFDT44"
-	myclient.addr = "https://localhost:9002/"
+	myclient.addr = "https://192.168.0.21:9002/"
 
 	keyid := ""
-	keyid, err = myclient.CreateKey("EH_AES_GCM_128", "EH_INTERNAL_KEY", "EH_KEYUSAGE_ENCRYPT_DECRYPT")
+	//	err := ""
 
+	keyid, _ = myclient.CreateKey("EH_AES_GCM_128", "EH_INTERNAL_KEY", "EH_KEYUSAGE_ENCRYPT_DECRYPT")
+	/*
+		if err != nil {
+			panic(err)
+		}
+	*/
 	return keyid
 
 }
