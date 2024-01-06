@@ -346,7 +346,7 @@ func GenerateSGXHSMKey() string {
 	//return key
 
 	// HTTP endpoint
-	posturl := "https://localhost/9002/ehsm?Action=ListKey"
+	posturl := "https://192.168.0.21:9002/ehsm?Action=ListKey"
 
 	// JSON body
 	body := []byte(`{
