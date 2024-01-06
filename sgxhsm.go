@@ -26,6 +26,11 @@ type SGXHSMKey struct {
 	publicKey  *EdX25519PublicKey
 }
 
+func (k *SGXHSMKey) Public() []byte {
+	//TODO implement me
+	panic("implement me")
+}
+
 // NewSGXHSMKeyFromPrivateKey constructs EdX25519Key from a private key.
 // The public key is derived from the private key.
 func NewSGXHSMKeyFromPrivateKey(privateKey *[ed25519.PrivateKeySize]byte) *EdX25519Key {
