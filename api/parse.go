@@ -3,7 +3,7 @@ package api
 import (
 	"strings"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys"
 )
 
 // ParseKey tries to determine what key type and parses the key bytes.

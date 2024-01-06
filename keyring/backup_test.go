@@ -5,10 +5,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
-	"github.com/burlingtonbertie99/mykeys-ext/dstore"
-	"github.com/burlingtonbertie99/mykeys-ext/keyring"
-	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
+	"github.com/burlingtonbertie99/mykeys"
+	"github.com/burlingtonbertie99/mykeys/dstore"
+	"github.com/burlingtonbertie99/mykeys/keyring"
+	"github.com/burlingtonbertie99/mykeys/tsutil"
 	"github.com/stretchr/testify/require"
 )
 

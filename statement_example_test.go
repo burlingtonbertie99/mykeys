@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys"
 )
 
 func ExampleStatement() {

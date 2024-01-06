@@ -5,9 +5,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/burlingtonbertie99/mykeys-ext/dstore/events"
-	"github.com/burlingtonbertie99/mykeys-ext/encoding"
-	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
+	"github.com/burlingtonbertie99/mykeys/dstore/events"
+	"github.com/burlingtonbertie99/mykeys/encoding"
+	"github.com/burlingtonbertie99/mykeys/tsutil"
 )
 
 func (m *Mem) EventAdd(ctx context.Context, path string, doc events.Document) (int64, error) {

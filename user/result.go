@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
+	"github.com/burlingtonbertie99/mykeys/tsutil"
 )
 
 // Result describes the status of a User.

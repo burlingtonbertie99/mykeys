@@ -3,7 +3,7 @@ package json_test
 import (
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext/json"
+	"github.com/burlingtonbertie99/mykeys/json"
 	"github.com/stretchr/testify/require"
 )
 

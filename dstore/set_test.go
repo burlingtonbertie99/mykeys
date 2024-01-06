@@ -3,7 +3,7 @@ package dstore_test
 import (
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext/dstore"
+	"github.com/burlingtonbertie99/mykeys/dstore"
 	"github.com/stretchr/testify/require"
 )
 

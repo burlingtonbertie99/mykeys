@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext/env"
+	"github.com/burlingtonbertie99/mykeys/env"
 	"github.com/stretchr/testify/require"
 )
 

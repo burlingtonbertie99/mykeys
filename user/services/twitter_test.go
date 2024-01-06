@@ -5,10 +5,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
-	"github.com/burlingtonbertie99/mykeys-ext/http"
-	"github.com/burlingtonbertie99/mykeys-ext/user"
-	"github.com/burlingtonbertie99/mykeys-ext/user/services"
+	"github.com/burlingtonbertie99/mykeys"
+	"github.com/burlingtonbertie99/mykeys/http"
+	"github.com/burlingtonbertie99/mykeys/user"
+	"github.com/burlingtonbertie99/mykeys/user/services"
 	"github.com/stretchr/testify/require"
 )
 

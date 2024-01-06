@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"time"
 
-	"github.com/burlingtonbertie99/mykeys-ext/encoding"
+	"github.com/burlingtonbertie99/mykeys/encoding"
 	"github.com/vmihailenco/msgpack/v4"
 )
 

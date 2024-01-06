@@ -4,7 +4,7 @@ import (
 	"crypto/x509"
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys"
 	"github.com/stretchr/testify/require"
 )
 

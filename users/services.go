@@ -1,8 +1,8 @@
 package users
 
 import (
-	"github.com/burlingtonbertie99/mykeys-ext/user"
-	"github.com/burlingtonbertie99/mykeys-ext/user/services"
+	"github.com/burlingtonbertie99/mykeys/user"
+	"github.com/burlingtonbertie99/mykeys/user/services"
 )
 
 // LookupService finds service.

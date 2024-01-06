@@ -1,6 +1,6 @@
 package api
 
-import "github.com/burlingtonbertie99/mykeys-ext"
+import "github.com/burlingtonbertie99/mykeys"
 
 // As returns key as concrete type.
 func (k *Key) As() keys.Key {

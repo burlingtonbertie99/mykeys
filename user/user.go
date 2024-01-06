@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
-	"github.com/burlingtonbertie99/mykeys-ext/encoding"
-	"github.com/burlingtonbertie99/mykeys-ext/json"
-	"github.com/burlingtonbertie99/mykeys-ext/user/validate"
+	"github.com/burlingtonbertie99/mykeys"
+	"github.com/burlingtonbertie99/mykeys/encoding"
+	"github.com/burlingtonbertie99/mykeys/json"
+	"github.com/burlingtonbertie99/mykeys/user/validate"
 	"github.com/pkg/errors"
 )
 

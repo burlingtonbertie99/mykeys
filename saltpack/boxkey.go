@@ -1,7 +1,7 @@
 package saltpack
 
 import (
-	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys"
 	ksaltpack "github.com/keybase/saltpack"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/nacl/box"

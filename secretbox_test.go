@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
-	"github.com/burlingtonbertie99/mykeys-ext/encoding"
+	"github.com/burlingtonbertie99/mykeys"
+	"github.com/burlingtonbertie99/mykeys/encoding"
 	"github.com/stretchr/testify/require"
 )
 

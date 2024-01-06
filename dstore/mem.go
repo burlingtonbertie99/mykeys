@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/burlingtonbertie99/mykeys-ext/dstore/events"
-	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
+	"github.com/burlingtonbertie99/mykeys/dstore/events"
+	"github.com/burlingtonbertie99/mykeys/tsutil"
 	"github.com/pkg/errors"
 )
 

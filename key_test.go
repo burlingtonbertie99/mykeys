@@ -3,7 +3,7 @@ package keys_test
 import (
 	"bytes"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys"
 )
 
 func testSeed(b byte) *[32]byte {

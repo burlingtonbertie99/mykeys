@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
-	"github.com/burlingtonbertie99/mykeys-ext/saltpack"
+	"github.com/burlingtonbertie99/mykeys"
+	"github.com/burlingtonbertie99/mykeys/saltpack"
 )
 
 func ExampleSigncrypt() {

@@ -2,7 +2,7 @@
 package noise
 
 import (
-	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys"
 	"github.com/flynn/noise"
 	"github.com/pkg/errors"
 )

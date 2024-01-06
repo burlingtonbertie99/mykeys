@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/burlingtonbertie99/mykeys-ext/bech32"
+	"github.com/burlingtonbertie99/mykeys/bech32"
 	"github.com/pkg/errors"
 )
 

@@ -5,8 +5,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
-	"github.com/burlingtonbertie99/mykeys-ext/http"
+	"github.com/burlingtonbertie99/mykeys"
+	"github.com/burlingtonbertie99/mykeys/http"
 )
 
 func ExampleNewAuthRequest() {

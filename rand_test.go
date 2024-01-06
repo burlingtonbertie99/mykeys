@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys"
 	"github.com/stretchr/testify/require"
 )
 

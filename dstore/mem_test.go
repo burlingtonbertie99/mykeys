@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext/dstore"
-	"github.com/burlingtonbertie99/mykeys-ext/tsutil"
+	"github.com/burlingtonbertie99/mykeys/dstore"
+	"github.com/burlingtonbertie99/mykeys/tsutil"
 	"github.com/stretchr/testify/require"
 )
 

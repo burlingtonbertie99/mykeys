@@ -4,7 +4,6 @@ go 1.13
 
 require (
 	github.com/ScaleFT/sshkeys v0.0.0-20200327173127-6142f742bca5
-	github.com/burlingtonbertie99/mykeys-ext v0.0.0-00010101000000-000000000000
 	github.com/danieljoos/wincred v1.1.0
 	github.com/davecgh/go-spew v1.1.1
 	github.com/dchest/blake2b v1.0.0
@@ -21,4 +20,4 @@ require (
 	golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e
 )
 
-replace github.com/burlingtonbertie99/mykeys-ext => ./
+replace github.com/burlingtonbertie99/mykeys => ./

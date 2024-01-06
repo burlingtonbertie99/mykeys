@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext/encoding"
-	"github.com/burlingtonbertie99/mykeys-ext/http"
+	"github.com/burlingtonbertie99/mykeys/encoding"
+	"github.com/burlingtonbertie99/mykeys/http"
 	"github.com/stretchr/testify/require"
 )
 

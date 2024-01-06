@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext/keyring"
+	"github.com/burlingtonbertie99/mykeys/keyring"
 	"github.com/stretchr/testify/require"
 )
 

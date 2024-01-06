@@ -3,8 +3,8 @@ package services
 import (
 	"context"
 
-	"github.com/burlingtonbertie99/mykeys-ext/http"
-	"github.com/burlingtonbertie99/mykeys-ext/user"
+	"github.com/burlingtonbertie99/mykeys/http"
+	"github.com/burlingtonbertie99/mykeys/user"
 )
 
 type https struct{}

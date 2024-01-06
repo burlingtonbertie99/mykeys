@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/burlingtonbertie99/mykeys-ext/encoding"
+	"github.com/burlingtonbertie99/mykeys/encoding"
 	"github.com/pkg/errors"
 )
 

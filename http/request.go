@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/burlingtonbertie99/mykeys-ext"
+	"github.com/burlingtonbertie99/mykeys"
 )
 
 // NewRequest alias.

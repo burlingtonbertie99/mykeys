@@ -1,6 +1,6 @@
 # Noise
 
-The [noise package](https://github.com/burlingtonbertie99/mykeys-ext/blob/master/noise) helps setup a Noise handshake using X25519 keys.
+The [noise package](https://github.com/burlingtonbertie99/mykeys/blob/master/noise) helps setup a Noise handshake using X25519 keys.
 
 The default cipher suite used is:
 Curve25519 ECDH, ChaCha20-Poly1305 AEAD, BLAKE2b hash.
@@ -25,4 +25,4 @@ See [noiseprotocol.org](http://www.noiseprotocol.org) for more info.
 
 ## Examples
 
-- [Handshake + Encrypt/Decrypt](https://github.com/burlingtonbertie99/mykeys-ext/blob/master/noise/example_test.go)
+- [Handshake + Encrypt/Decrypt](https://github.com/burlingtonbertie99/mykeys/blob/master/noise/example_test.go)

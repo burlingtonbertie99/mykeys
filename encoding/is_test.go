@@ -3,7 +3,7 @@ package encoding_test
 import (
 	"testing"
 
-	"github.com/burlingtonbertie99/mykeys-ext/encoding"
+	"github.com/burlingtonbertie99/mykeys/encoding"
 	"github.com/stretchr/testify/require"
 )
 
