@@ -386,7 +386,7 @@ func GenerateSGXHSMKey() string {
 
 	myclient.appid = "eb77f9c4-3ae6-44e0-b9ef-4a4fd20e6582"
 	myclient.apikey = "wWH4wPRTJvvAdviN069gB9dKhbLFDT44"
-	myclient.addr = "https://192.168.0.21:9002/"
+	myclient.addr = "https://192.168.0.21:9002"
 
 	keyid := ""
 	//	err := ""
