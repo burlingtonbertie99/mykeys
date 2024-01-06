@@ -384,6 +384,10 @@ func GenerateSGXHSMKey() string {
 
 	var myclient Client
 
+	myclient.appid = "eb77f9c4-3ae6-44e0-b9ef-4a4fd20e6582"
+	myclient.apikey = "wWH4wPRTJvvAdviN069gB9dKhbLFDT44"
+	myclient.addr = "https://localhost:9002/ehsm"
+
 	keyid := ""
 	keyid, err = myclient.CreateKey("EH_AES_GCM_128", "EH_INTERNAL_KEY", "EH_KEYUSAGE_ENCRYPT_DECRYPT")
 
