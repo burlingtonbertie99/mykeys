@@ -36,8 +36,22 @@ type SGXHSMPublicKey struct {
 }
 
 type SGXHSMKey struct {
+	id ID
+
 	privateKey *[]byte
 	publicKey  *string
+}
+
+func (k *SGXHSMKey) ID() ID {
+	//TODO implement me
+	//panic("implement me")
+	return k.id
+
+}
+
+func (k *SGXHSMKey) Private() []byte {
+	//TODO implement me
+	panic("implement me")
 }
 
 func (k *SGXHSMKey) Public() []byte {
