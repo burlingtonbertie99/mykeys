@@ -7,6 +7,7 @@ import (
 	"crypto/tls"
 	"encoding/base64"
 	"encoding/json"
+	"github.com/burlingtonbertie99/mykeys/bech32"
 	"io/ioutil"
 	"sort"
 	"strconv"
@@ -24,7 +25,7 @@ import (
 // EdX25519 key type.
 const SGXHSM KeyType = "sgxhsm"
 
-//const sgxhsmKeyHRP string = "sgx"
+const sgxhsmKeyHRP string = "sgx"
 
 // SignOverhead alias for (nacl) sign.Overhead.
 //const SignOverhead = sign.Overhead
@@ -45,7 +46,17 @@ type SGXHSMKey struct {
 func (k *SGXHSMKey) ID() ID {
 	//TODO implement me
 	//panic("implement me")
-	return k.id
+
+	// Check that it encodes to the same string.
+	encoded, _ := bech32.Encode(sgxhsmKeyHRP, []byte(*k.publicKey))
+	//if err != nil {
+	//	t.Errorf("encoding failed: %v", err)
+	//}
+	//if encoded != str {
+	//	t.Errorf("expected data to encode to %v, but got %v", str, encoded)
+	//}
+
+	return ID(encoded)
 
 }
 
