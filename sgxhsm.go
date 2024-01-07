@@ -13,9 +13,9 @@ import (
 	"sync"
 	"time"
 
-	"crypto"
+	_ "crypto"
 	"crypto/ed25519"
-	"crypto/subtle"
+	_ "crypto/subtle"
 	"fmt"
 	"github.com/iancoleman/orderedmap"
 	"net/http"
@@ -35,10 +35,9 @@ type SGXHSMPublicKey struct {
 	publicKey *[ed25519.PublicKeySize]byte
 }
 
-// SGXHSMKey SGXHSMPublicKey is a SGXHSM key capable of signing and encryption
 type SGXHSMKey struct {
-	privateKey *[ed25519.PrivateKeySize]byte
-	publicKey  *EdX25519PublicKey
+	privateKey *[]byte
+	publicKey  *string
 }
 
 func (k *SGXHSMKey) Public() []byte {
@@ -48,11 +47,11 @@ func (k *SGXHSMKey) Public() []byte {
 
 // NewSGXHSMKeyFromPrivateKey constructs EdX25519Key from a private key.
 // The public key is derived from the private key.
-func NewSGXHSMKeyFromPrivateKey(privateKey *[ed25519.PrivateKeySize]byte) *EdX25519Key {
-	k := &EdX25519Key{}
-	if err := k.setPrivateKey(privateKey[:]); err != nil {
-		panic(err)
-	}
+func NewSGXHSMKeyFromPrivateKey(privateKey *[ed25519.PrivateKeySize]byte) *SGXHSMKey {
+	k := &SGXHSMKey{}
+	//if err := k.setPrivateKey(privateKey[:]); err != nil {
+	///	panic(err)
+	//}
 	return k
 }
 
@@ -80,28 +79,28 @@ func (k *SGXHSMKey) setPrivateKey(b []byte) error {
 }
 */
 // X25519Key converts EdX25519Key to X25519Key.
-func (k *SGXHSMKey) SGXHSMKey() *X25519Key {
-	secretKey := ed25519PrivateKeyToCurve25519(ed25519.PrivateKey(k.privateKey[:]))
-	if len(secretKey) != 32 {
-		panic("failed to convert key: invalid secret key bytes")
-	}
-	return NewX25519KeyFromPrivateKey(Bytes32(secretKey))
-}
+//func (k *SGXHSMKey) SGXHSMKey() *SGXHSMKey {
+//	secretKey := ed25519PrivateKeyToCurve25519(ed25519.PrivateKey(k.privateKey[:]))
+//	if len(secretKey) != 32 {
+//		panic("failed to convert key: invalid secret key bytes")
+//	}
+//	return NewX25519KeyFromPrivateKey(Bytes32(secretKey))
+//}
 
 // ID ...
-func (k *SGXHSMKey) ID() ID {
-	return k.publicKey.ID()
-}
+//func (k *SGXHSMKey) ID() ID {
+//	return k.publicKey
+//}
 
 // Type ...
 func (k *SGXHSMKey) Type() KeyType {
-	return EdX25519
+	return SGXHSM
 }
 
 // Private ...
-func (k *SGXHSMKey) Private() []byte {
-	return k.privateKey[:]
-}
+//func (k *SGXHSMKey) Private() []byte {
+//	return k.privateKey[:]
+//}
 
 // Public ...
 //func (k *SGXHSMKey) Public() []byte {
@@ -109,9 +108,9 @@ func (k *SGXHSMKey) Private() []byte {
 //}
 
 // Signer interface.
-func (k *SGXHSMKey) Signer() crypto.Signer {
-	return ed25519.PrivateKey(k.Private())
-}
+//func (k *SGXHSMKey) Signer() crypto.Signer {
+//	return ed25519.PrivateKey(k.Private())
+//}
 
 /*
 func (k *SGXHSMKey) PaperKey() string {
@@ -150,17 +149,17 @@ func (k *SGXHSMKey) UnmarshalText(s []byte) error {
 }
 */
 // Equal returns true if equal to key.
-func (k *SGXHSMKey) Equal(o *EdX25519Key) bool {
-	return subtle.ConstantTimeCompare(k.Private(), o.Private()) == 1
-}
+//func (k *SGXHSMKey) Equal(o *EdX25519Key) bool {
+//	return subtle.ConstantTimeCompare(k.Private(), o.Private()) == 1
+//}
 
 // NewSGXHSMPublicKey creates a EdX25519PublicKey.
-func NewSGXHSMPublicKey(b *[ed25519.PublicKeySize]byte) *SGXHSMPublicKey {
-	return &SGXHSMPublicKey{
-		id:        MustID(edx25519KeyHRP, b[:]),
-		publicKey: b,
-	}
-}
+//func NewSGXHSMPublicKey(b *[ed25519.PublicKeySize]byte) *SGXHSMPublicKey {
+//	return &SGXHSMPublicKey{
+//		id:        MustID(SGXHSM2KeyHRP, b[:]),
+//		publicKey: b,
+//	}
+//}
 
 /*
 // NewSGXHSMPublicKeyFromID creates a EdX25519PublicKey from an ID.
@@ -339,7 +338,7 @@ func (k *SGXHSMPublicKey) Sign(b []byte) []byte {
 //}
 
 // GenerateSGXHSMKey generates a SGXHSMPublicKey (EdX25519).
-func GenerateSGXHSMKey() string {
+func GenerateSGXHSMKey() *SGXHSMKey {
 	logger.Infof("Generating SGXHSM key...")
 	//seed := Rand32()
 	//key := NewEdX25519KeyFromSeed(seed)
@@ -388,20 +387,14 @@ func GenerateSGXHSMKey() string {
 	myclient.apikey = "wWH4wPRTJvvAdviN069gB9dKhbLFDT44"
 	myclient.addr = "https://192.168.0.21:9002"
 
-	keyid := ""
-	//	err := ""
-
-	keyid, _ = myclient.CreateKey("EH_AES_GCM_128", "EH_INTERNAL_KEY", "EH_KEYUSAGE_ENCRYPT_DECRYPT")
+	var dummy SGXHSMKey
+	dummy, _ = myclient.CreateKey("EH_AES_GCM_128", "EH_INTERNAL_KEY", "EH_KEYUSAGE_ENCRYPT_DECRYPT")
 	/*
 		if err != nil {
 			panic(err)
 		}
 	*/
-	return keyid
-
-}
-
-func CreateKeyXXX(s string, s2 string, s3 string) {
+	return &dummy
 
 }
 
@@ -449,24 +442,27 @@ keyusage
 Output:
 keyid -- A uinque keyid of the cmk.
 */
-func (c *Client) CreateKey(keyspec, origin, keyusage string) (string, error) {
+func (c *Client) CreateKey(keyspec, origin, keyusage string) (SGXHSMKey, error) {
+
+	var dummy SGXHSMKey
+
 	// make JSON for createkey
 	payload := orderedmap.New()
 	if keyspec != "" {
 		payload.Set("keyspec", keyspec)
 	} else {
-		return "", fmt.Errorf("Please input keyspec.")
+		return dummy, fmt.Errorf("Please input keyspec.")
 	}
 	if origin != "" {
 		payload.Set("origin", origin)
 	} else {
-		return "", fmt.Errorf("Please input origin.")
+		return dummy, fmt.Errorf("Please input origin.")
 	}
 
 	if keyusage != "" {
 		payload.Set("keyusage", keyusage)
 	} else {
-		return "", fmt.Errorf("Please input keyusage.")
+		return dummy, fmt.Errorf("Please input keyusage.")
 	}
 
 	params := c.initParams(payload)
@@ -477,18 +473,21 @@ func (c *Client) CreateKey(keyspec, origin, keyusage string) (string, error) {
 	// call ehsm kms
 	resp, err := c.doPost(params, "CreateKey")
 	if err != nil {
-		return "", err
+		return dummy, err
 	}
 	result, ok := resp["result"].(map[string]interface{})
 	if !ok {
-		return "", fmt.Errorf("result field is not a valid map")
+		return dummy, fmt.Errorf("result field is not a valid map")
 	}
 
 	keyid, ok := result["keyid"].(string)
 	if !ok {
-		return "", fmt.Errorf("keyid field is not a valid string")
+		return dummy, fmt.Errorf("keyid field is not a valid string")
 	}
-	return keyid, nil
+
+	dummy.publicKey = &keyid
+
+	return dummy, nil
 }
 
 // For production environment, the web server should request a formally issued
