@@ -51,12 +51,18 @@ func (k *SGXHSMKey) ID() ID {
 
 func (k *SGXHSMKey) Private() []byte {
 	//TODO implement me
-	panic("implement me")
+	//panic("implement me")
+
+	return nil
+
 }
 
 func (k *SGXHSMKey) Public() []byte {
 	//TODO implement me
-	panic("implement me")
+
+	//panic("implement me")
+
+	return nil
 }
 
 // NewSGXHSMKeyFromPrivateKey constructs EdX25519Key from a private key.
