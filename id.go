@@ -23,11 +23,17 @@ func (i ID) Decode() (string, []byte, error) {
 
 // NewID creates ID from HRP (human readable part) and bytes.
 func NewID(hrp string, b []byte) (ID, error) {
-	out, err := bech32.Encode(hrp, b)
-	if err != nil {
-		return "", err
-	}
-	return ID(out), nil
+
+	return ID(string(b[:])), nil
+
+	/*
+		out, err := bech32.Encode(hrp, b)
+		if err != nil {
+			return "", err
+		}
+		return ID(out), nil
+	*/
+
 }
 
 // MustID returns a (bech32) ID with HRP (human readable part) and bytes, or
@@ -129,6 +135,10 @@ func (i ID) Type() KeyType {
 		return ""
 	}
 	switch hrp {
+	//	case RSAKeyHRP:
+	//		return RSA
+	case sgxhsmKeyHRP:
+		return SGXHSM
 	case edx25519KeyHRP:
 		return EdX25519
 	case x25519KeyHRP:
