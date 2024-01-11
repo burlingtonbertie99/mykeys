@@ -7,7 +7,6 @@ import (
 	"crypto/tls"
 	"encoding/base64"
 	"encoding/json"
-	"github.com/burlingtonbertie99/mykeys/bech32"
 	"io/ioutil"
 	"sort"
 	"strconv"
@@ -48,7 +47,7 @@ func (k *SGXHSMKey) ID() ID {
 	//panic("implement me")
 
 	// Check that it encodes to the same string.
-	encoded, _ := bech32.Encode(sgxhsmKeyHRP, []byte(*k.publicKey))
+	//encoded, _ := bech32.Encode(sgxhsmKeyHRP, []byte(*k.publicKey))
 	//if err != nil {
 	//	t.Errorf("encoding failed: %v", err)
 	//}
@@ -56,7 +55,7 @@ func (k *SGXHSMKey) ID() ID {
 	//	t.Errorf("expected data to encode to %v, but got %v", str, encoded)
 	//}
 
-	return ID(encoded)
+	return ID([]byte(*k.publicKey))
 
 }
 
