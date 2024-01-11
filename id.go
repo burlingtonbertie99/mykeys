@@ -48,14 +48,28 @@ func MustID(hrp string, b []byte) ID {
 
 // ParseID parses a string and validates an ID.
 func ParseID(s string) (ID, error) {
+
 	if s == "" {
 		return "", errors.Errorf("failed to parse id: empty string")
 	}
-	_, _, err := bech32.Decode(s)
-	if err != nil {
-		return "", errors.Wrapf(err, "failed to parse id")
-	}
+	//	_, _, err := bech32.Decode(s)
+	//	if err != nil {
+	//		return "", errors.Wrapf(err, "failed to parse id")
+	//	}
 	return ID(s), nil
+
+	/*
+		if s == "" {
+			return "", errors.Errorf("failed to parse id: empty string")
+		}
+		_, _, err := bech32.Decode(s)
+		if err != nil {
+			return "", errors.Wrapf(err, "failed to parse id")
+		}
+		return ID(s), nil
+
+	*/
+
 }
 
 // IsValidID returns true if string is a valid ID.
